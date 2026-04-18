@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scan Report</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+        }
+        h1 { color: #38bdf8; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #334155;
+        }
+        .danger { color: red; }
+        .safe { color: green; }
+    </style>
+</head>
+<body>
+<h1>🔍 Vulnerability Scan Report</h1>
+{% for host in data %}
+<h2>Host: {{ host.ip }}</h2>
+<table>
+<tr>
+    <th>Port</th>
+    <th>Service</th>
+    <th>Status</th>
+</tr>
+{% for port in host.ports %}
+<tr>
+    <td>{{ port.port }}</td>
+    <td>{{ port.service }}</td>
+    <td class="{% if '⚠️' in port.vulnerability %}danger{% else %}safe{% endif %}">
+        {{ port.vulnerability }}
+    </td>
+</tr>
+{% endfor %}
+</table>
+{% endfor %}
+</body>
+</html>
