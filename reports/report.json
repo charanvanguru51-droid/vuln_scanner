@@ -1,0 +1,130 @@
+[
+    {
+        "ip": "192.168.43.22",
+        "hostname": "BEAST",
+        "state": "up",
+        "os": "AT&T BGW210 voice gateway",
+        "ports": [
+            {
+                "port": 135,
+                "protocol": "tcp",
+                "service": "msrpc",
+                "product": "Microsoft Windows RPC",
+                "version": "",
+                "state": "open",
+                "extra": "",
+                "vulnerability": "Windows RPC exposed."
+            },
+            {
+                "port": 139,
+                "protocol": "tcp",
+                "service": "netbios-ssn",
+                "product": "Microsoft Windows netbios-ssn",
+                "version": "",
+                "state": "open",
+                "extra": "",
+                "vulnerability": "NetBIOS service exposed."
+            },
+            {
+                "port": 445,
+                "protocol": "tcp",
+                "service": "microsoft-ds",
+                "product": "",
+                "version": "",
+                "state": "open",
+                "extra": "",
+                "vulnerability": "SMB service detected. Ensure SMBv1 is disabled. | SMB Port (445) exposed. Possible ransomware target."
+            },
+            {
+                "port": 5040,
+                "protocol": "tcp",
+                "service": "",
+                "product": "",
+                "version": "",
+                "state": "open",
+                "extra": "",
+                "vulnerability": "No obvious issues detected."
+            },
+            {
+                "port": 49664,
+                "protocol": "tcp",
+                "service": "msrpc",
+                "product": "Microsoft Windows RPC",
+                "version": "",
+                "state": "open",
+                "extra": "",
+                "vulnerability": "No obvious issues detected."
+            },
+            {
+                "port": 49665,
+                "protocol": "tcp",
+                "service": "msrpc",
+                "product": "Microsoft Windows RPC",
+                "version": "",
+                "state": "open",
+                "extra": "",
+                "vulnerability": "No obvious issues detected."
+            },
+            {
+                "port": 49666,
+                "protocol": "tcp",
+                "service": "msrpc",
+                "product": "Microsoft Windows RPC",
+                "version": "",
+                "state": "open",
+                "extra": "",
+                "vulnerability": "No obvious issues detected."
+            },
+            {
+                "port": 49667,
+                "protocol": "tcp",
+                "service": "msrpc",
+                "product": "Microsoft Windows RPC",
+                "version": "",
+                "state": "open",
+                "extra": "",
+                "vulnerability": "No obvious issues detected."
+            },
+            {
+                "port": 49668,
+                "protocol": "tcp",
+                "service": "msrpc",
+                "product": "Microsoft Windows RPC",
+                "version": "",
+                "state": "open",
+                "extra": "",
+                "vulnerability": "No obvious issues detected."
+            },
+            {
+                "port": 49670,
+                "protocol": "tcp",
+                "service": "msrpc",
+                "product": "Microsoft Windows RPC",
+                "version": "",
+                "state": "open",
+                "extra": "",
+                "vulnerability": "No obvious issues detected."
+            },
+            {
+                "port": 49713,
+                "protocol": "tcp",
+                "service": "tcpwrapped",
+                "product": "",
+                "version": "",
+                "state": "open",
+                "extra": "",
+                "vulnerability": "No obvious issues detected."
+            },
+            {
+                "port": 63400,
+                "protocol": "tcp",
+                "service": "tcpwrapped",
+                "product": "",
+                "version": "",
+                "state": "open",
+                "extra": "",
+                "vulnerability": "No obvious issues detected."
+            }
+        ]
+    }
+]
